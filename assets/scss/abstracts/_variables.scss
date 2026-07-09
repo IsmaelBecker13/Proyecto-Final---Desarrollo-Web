@@ -1,0 +1,20 @@
+$color-primary: #0a1216;
+$color-secondary: #000000;
+$color-background: #010a0f;
+$color-font-title: #ffc600;
+$color-font-title-hover: #f8d96b; 
+$color-font-body: #ffffff; 
+
+@font-face {
+    font-family: "Beaufort";
+    src: url("../fonts/BeaufortforLOL-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Spiegel";
+    src: url("../fonts/Spiegel-Regular.ttf") format("truetype");
+}
+$font-description: "Helvetica", sans;
+$font-title: "Beaufort", sans;
+$font-body: "Spiegel", sans-serif;
+$spacing-section: 5rem;

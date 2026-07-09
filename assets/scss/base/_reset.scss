@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    padding-top: 90px; // altura aproximada del navbar
+}
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html {
+  overflow-y: scroll;
+}

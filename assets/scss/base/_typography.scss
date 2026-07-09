@@ -1,0 +1,19 @@
+header
+{
+    color: $color-secondary;
+}
+body{
+    font-family: $font-body;
+    background-color: $color-primary;
+    color: $color-font-body;
+}
+
+h1,h3{
+    font-family: $font-title;
+    color: $color-font-title;
+}
+
+h2{
+    font-family: $font-body;
+    color: $color-font-title;
+}

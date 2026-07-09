@@ -1,0 +1,98 @@
+.btn-primary{
+background-color: $color-primary;
+padding: 1rem 2rem;
+border-radius: 8px;
+color: $color-font-title;
+transition: .3s;
+
+&:hover
+{
+    transform: scale(1.05);
+}
+
+}
+.role-buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin: 32px;
+}
+.btn-role{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    gap: 16px;
+    h3{
+        text-align: center;
+    }
+    transition: transform .01s ease-out;
+    img{
+        opacity: 0.75;
+        transition: opacity  .01s ease-out;
+    }
+    &:hover
+    {
+        transform: scale(1.2);
+        img{
+            opacity: 1.0;
+        }       
+    }    
+}
+.btn-role-assasin
+{
+    @extend .btn-role;
+}
+.btn-role-fighter
+{
+    @extend .btn-role;
+}
+.btn-role-tank
+{
+    @extend .btn-role;
+}
+.btn-role-mage
+{
+    @extend .btn-role;
+}
+.btn-role-marksman
+{
+    @extend .btn-role;
+}
+.btn-role-support
+{
+    @extend .btn-role;
+}
+.know-champs:has(.btn-role-assasin:hover) .champ-img
+{
+    background-image: url("../img/akali.png");
+    transform: scale(1.05);
+}
+.know-champs:has(.btn-role-fighter:hover) .champ-img
+{
+    background-image: url("../img/yasuo.png");
+    transform: scale(1.05);
+}
+.know-champs:has(.btn-role-marksman:hover) .champ-img
+{
+    background-image: url("../img/jinx.png");
+    transform: scale(1.05);
+}
+.know-champs:has(.btn-role-support:hover) .champ-img
+{
+    background-image: url("../img/thresh.png");
+    transform: scale(1.05);
+}
+.know-champs:has(.btn-role-tank:hover) .champ-img
+{
+    background-image: url("../img/leona.png");
+    transform: scale(1.05);
+}
+.know-champs:has(.btn-role-mage:hover) .champ-img
+{
+    background-image: url("../img/lux.png");
+    transform: scale(1.05);
+}
