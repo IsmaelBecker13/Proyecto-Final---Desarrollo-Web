@@ -88,6 +88,17 @@ h2 {
   color: #ffc600;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #010a0f;
+  padding: 1rem;
+  color: #ffc600;
+  font-family: "Spiegel", sans-serif;
+}
+
 nav {
   position: fixed;
   top: 0;
