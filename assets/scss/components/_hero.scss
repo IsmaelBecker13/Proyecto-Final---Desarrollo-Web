@@ -56,6 +56,7 @@ $heroes: 1,2,3,4,5;
     background-color: rgba($color: #000000, $alpha: 0.75);
     margin-top: 50px;
     margin-bottom: 50px;
+    height: 620px;
     h1
     {
         font-size: 2rem;
@@ -92,9 +93,10 @@ $heroes: 1,2,3,4,5;
 .champ-description
 {
     padding: 50px;
+    height: 100%;
 }
 .champ-background{
-    height: 558px;
+    height: 100%;
     background-image: url("../img/backgrounds/background2.png");
     background-size: cover;
     background-position: center;
@@ -133,8 +135,13 @@ $heroes: 1,2,3,4,5;
         text-align: justify;
         font-size: 1rem;
     }     
-
-    &-description{
+    &-description
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;     
+        gap: 1rem;   
         padding: 32px;
         margin-right: 110px;
         margin-left: 110px;
@@ -142,7 +149,6 @@ $heroes: 1,2,3,4,5;
         border-radius: 10px;
         p{
             margin: 0px;
-            padding: 1rem;
         }
         // outline: 2px solid $color-font-title;
     }
@@ -201,7 +207,17 @@ $heroes: 1,2,3,4,5;
 .know-library
 {
     margin-top: 64px;
-    margin-bottom: 64px;    
+    margin-bottom: 64px;   
+    h1
+    {
+        font-size: 2rem;
+        color: #ffffff;
+        font-family: $font-body;
+    }    
+    h2
+    {
+        font-size: 2rem;
+    }        
     video {
         width: 100%;
         display: block;
@@ -352,13 +368,21 @@ $heroes: 1,2,3,4,5;
             }
         }
         &-intro{
+            &-video{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                outline: 1px solid $color-font-title;
+                // background-color: rgba($color: #000000, $alpha: 0.75);
+                // border-radius: 5px;
+            }
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;            
             width: 40%;
-            height: 40%;
+            height: 100%;
             gap: 1rem;
             padding: 2rem;
             &-img
