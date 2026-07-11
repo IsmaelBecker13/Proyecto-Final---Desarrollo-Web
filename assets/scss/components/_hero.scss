@@ -330,7 +330,8 @@ $heroes: 1,2,3,4,5;
             width: 100%;
             height: 40%;
             padding: 2rem;
-            outline: 1px solid $color-font-title;
+            border: 2px solid;
+            border-image: linear-gradient(45deg, $color-font-links, $color-font-title) 1;
         }         
         &-row3
         {
@@ -372,7 +373,8 @@ $heroes: 1,2,3,4,5;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                outline: 1px solid $color-font-title;
+                border: 2px solid;
+                border-image: linear-gradient(45deg, rgb(51, 47, 23), $color-font-title) 1;
                 // background-color: rgba($color: #000000, $alpha: 0.75);
                 // border-radius: 5px;
             }
@@ -394,7 +396,8 @@ $heroes: 1,2,3,4,5;
                     width: 100%;
                     height: 100%;                    
                     object-fit: cover;
-                    outline: 1px solid $color-font-title;
+                    border: 2px solid;
+                    border-image: linear-gradient(45deg, $color-font-links, $color-font-title) 1;
                 }
             }
         }
@@ -410,7 +413,8 @@ $heroes: 1,2,3,4,5;
             height: 40%;
             gap: 1rem;
             &-img{          
-                outline: 1px solid $color-font-title;
+                border: 2px solid;
+                border-image: linear-gradient(45deg, $color-font-links, $color-font-title) 1;
                 width: 60%;
                 height: 500px;          
                 img {

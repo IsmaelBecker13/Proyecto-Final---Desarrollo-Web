@@ -1,34 +1,33 @@
 // abstracts
-@import "./abstracts/animations";
-@import "./abstracts/extends";
-@import "./abstracts/mixins";
-@import "./abstracts/variables";
-
+@import "./abstracts/_variables";
+@import "./abstracts/_extends";
+@import "./abstracts/_mixins";
+@import "./abstracts/_animations";
 // base
-@import "./base/reset";
+@import "./base/_reset";
 @import "./base/typography";
 @import "./base/utilities";
 
 // layout
-@import "./layout/footer";
-@import "./layout/grid";
-@import "./layout/header";
-@import "./layout/navbar";
+@import "./layout/_footer";
+@import "./layout/_grid";
+@import "./layout/_header";
+@import "./layout/_navbar";
 
 // components
-@import "./components/buttons";
-@import "./components/hero";
-@import "./components/cards";
-@import "./components/carousel";
-@import "./components/forms";
+@import "./components/_buttons";
+@import "./components/_hero";
+@import "./components/_cards";
+@import "./components/_carousel";
+@import "./components/_forms";
 
 
 // pages
-@import "./pages/builds";
-@import "./pages/champions";
-@import "./pages/home";
-@import "./pages/regions";
-@import "./pages/summoners";
+@import "./pages/_builds";
+@import "./pages/_champions";
+@import "./pages/_home";
+@import "./pages/_regions";
+@import "./pages/_summoners";
 
 // responsive
 @import "./responsive/mobile";

@@ -46,8 +46,6 @@
   width: 285px;
   height: 600px;
   perspective: 1000px;
-  background-color: #010a0f;
-  animation: none;
 }
 
 .card-inner {
@@ -55,22 +53,14 @@
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
+  animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s forwards;
 }
 
 .backcard {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
-}
-.backcard img {
-  width: 50%;
-}
-.backcard {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #0a1216;
   backface-visibility: hidden;
 }
 
@@ -78,7 +68,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #0a1216;
   backface-visibility: hidden;
 }
 
@@ -98,12 +88,6 @@
     transform: rotateY(180deg);
   }
 }
-article.aos-animate .card-inner {
-  animation: flip-vertical-right 0.4s ease-in-out;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-}
-
 * {
   padding: 0px;
   margin: 0px;
@@ -645,8 +629,7 @@ nav {
   width: 100%;
   height: 40%;
   padding: 2rem;
-  border: 2px solid;
-  border-image: linear-gradient(45deg, rgb(106, 98, 44), #ffc600) 1;
+  outline: 1px solid #ffc600;
 }
 .show-regions-demacia-row3 {
   display: flex;
@@ -684,8 +667,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid;
-  border-image: linear-gradient(45deg, rgb(106, 98, 44), #ffc600) 1;
+  outline: 1px solid #ffc600;
 }
 .show-regions-demacia-intro {
   display: flex;
@@ -706,8 +688,7 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 2px solid;
-  border-image: linear-gradient(45deg, rgb(106, 98, 44), #ffc600) 1;
+  outline: 1px solid #ffc600;
 }
 .show-regions-demacia-about {
   display: flex;
@@ -721,8 +702,7 @@ nav {
   gap: 1rem;
 }
 .show-regions-demacia-about-img {
-  border: 2px solid;
-  border-image: linear-gradient(45deg, rgb(106, 98, 44), #ffc600) 1;
+  outline: 1px solid #ffc600;
   width: 60%;
   height: 500px;
 }
@@ -885,7 +865,6 @@ nav {
 }
 .show-champs-description p {
   text-align: justify;
-  color: #ffffff;
   font-size: 0.8rem;
 }
 .show-champs-description p strong {
@@ -1012,4 +991,4 @@ nav {
   text-align: justify;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */
