@@ -4,12 +4,15 @@ padding: 1rem 2rem;
 border-radius: 8px;
 color: $color-font-title;
 transition: .3s;
-
+text-align: center;
 &:hover
 {
     transform: scale(1.05);
 }
-
+@media (max-width: 480px)
+{
+    font-size: 1rem;
+}
 }
 .role-buttons
 {
@@ -26,6 +29,10 @@ transition: .3s;
     align-items: center;
     width: 96px;
     gap: 16px;
+    @media (max-width: 480px)
+    {
+        width: 48px;
+    }
     h3{
         text-align: center;
     }

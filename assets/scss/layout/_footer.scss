@@ -7,6 +7,9 @@ footer{
     padding: 1rem;
     color: $color-font-title;
     font-family: $font-body;
+    @media (max-widht: 480px) {
+        padding: 0.25rem;
+    }
 }
 .footer
 {
@@ -53,7 +56,33 @@ footer{
                 span:last-child{
                     color: $color-font-body;
                 }
-            }              
+            }    
+            @media (max-width: 480px) 
+            {
+                padding: 0.25rem;
+                ul
+                {
+                    font-size: 0.75rem;
+                }                
+                h3
+                {
+                    font-size: 1rem;
+                }               
+                p
+                {  
+                    font-size: 0.75rem;
+                }              
+            }
+
         }
+        @media (max-width: 480px) 
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 130px;
+            gap: 0rem;        
+        }           
     }
 }

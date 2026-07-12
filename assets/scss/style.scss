@@ -32,3 +32,8 @@
 // responsive
 @import "./responsive/mobile";
 @import "./responsive/tablet";
+
+html,
+body {
+    overflow-x: clip;   /* o hidden si clip no está disponible */
+}

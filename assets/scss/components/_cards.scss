@@ -40,6 +40,9 @@
         grid-template-columns: repeat(5, 1fr);
         grid-auto-rows: 600px;
         gap: 1rem;
+        @media (max-width: 480px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     &-row{
         margin: 1rem;
@@ -47,6 +50,10 @@
         grid-template-rows: repeat(1, 600px);
         grid-template-columns: repeat(5, 1fr);
         gap: 1rem;
+        @media (max-width: 480px) {
+            grid-template-rows: repeat(5, 600px);
+            grid-template-columns: repeat(1, 1fr);
+        }        
     }    
     h1
     {
@@ -154,6 +161,11 @@
         grid-template-rows: repeat(3, 390px);
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
+        @media (max-width: 480px)
+        {
+            grid-template-rows: repeat(12, 450px);
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     &-card
     {
@@ -182,6 +194,12 @@
             font-size: 1rem;
             margin: 0px;
         }
+        @media (max-width: 480px)
+        {
+            p{
+                padding: 1rem;
+            }
+        }        
     }
 }
 
@@ -191,7 +209,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    &-card{
+    &-card
+    {
+        padding: 1rem;
         display: flex;
         direction: column;
         align-items: center;
