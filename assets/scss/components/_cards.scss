@@ -40,6 +40,9 @@
         grid-template-columns: repeat(5, 1fr);
         grid-auto-rows: 600px;
         gap: 1rem;
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
         @media (max-width: 480px) {
             grid-template-columns: repeat(1, 1fr);
         }
@@ -50,6 +53,10 @@
         grid-template-rows: repeat(1, 600px);
         grid-template-columns: repeat(5, 1fr);
         gap: 1rem;
+        @media (max-width: 768px) {
+            grid-template-rows: repeat(5, 600px);
+            grid-template-columns: repeat(1, 1fr);
+        }  
         @media (max-width: 480px) {
             grid-template-rows: repeat(5, 600px);
             grid-template-columns: repeat(1, 1fr);
@@ -161,6 +168,11 @@
         grid-template-rows: repeat(3, 390px);
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
+        @media (max-width: 768px)
+        {
+            grid-template-rows: repeat(6, 450px);
+            grid-template-columns: repeat(2, 1fr);
+        }
         @media (max-width: 480px)
         {
             grid-template-rows: repeat(12, 450px);

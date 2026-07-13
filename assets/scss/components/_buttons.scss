@@ -9,10 +9,15 @@ text-align: center;
 {
     transform: scale(1.05);
 }
+@media (max-width: 768px)
+{
+    font-size: 1.2rem;
+}
 @media (max-width: 480px)
 {
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
+
 }
 .role-buttons
 {
@@ -29,10 +34,15 @@ text-align: center;
     align-items: center;
     width: 96px;
     gap: 16px;
+    @media (max-width: 768px)
+    {
+        width: 64px;
+    }
     @media (max-width: 480px)
     {
         width: 48px;
     }
+
     h3{
         text-align: center;
     }

@@ -7,9 +7,13 @@ footer{
     padding: 1rem;
     color: $color-font-title;
     font-family: $font-body;
+    @media (max-widht: 768px) {
+        padding: 0.5rem;
+    }
     @media (max-widht: 480px) {
         padding: 0.25rem;
     }
+
 }
 .footer
 {
@@ -21,6 +25,10 @@ footer{
         align-items: center;
         height: 130px;
         gap: 2rem;
+        @media (max-width: 768px) 
+        {
+            gap: 0.25rem;
+        }
         &-box
         {    
             padding: 0.8rem;    
@@ -56,7 +64,23 @@ footer{
                 span:last-child{
                     color: $color-font-body;
                 }
-            }    
+            }  
+            @media (max-width: 768px) 
+            {
+                padding: 0.25rem;
+                ul
+                {
+                    font-size: 1rem;
+                }                
+                h3
+                {
+                    font-size: 1.5rem;
+                }               
+                p
+                {  
+                    font-size: 1rem;
+                }              
+            }  
             @media (max-width: 480px) 
             {
                 padding: 0.25rem;
@@ -73,7 +97,6 @@ footer{
                     font-size: 0.75rem;
                 }              
             }
-
         }
         @media (max-width: 480px) 
         {
