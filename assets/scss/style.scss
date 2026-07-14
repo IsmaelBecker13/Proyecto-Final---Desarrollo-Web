@@ -1,39 +1,22 @@
 // abstracts
 @import "./abstracts/_variables";
-@import "./abstracts/_extends";
 @import "./abstracts/_mixins";
 @import "./abstracts/_animations";
+
 // base
 @import "./base/_reset";
 @import "./base/typography";
-@import "./base/utilities";
 
 // layout
 @import "./layout/_footer";
-@import "./layout/_grid";
-@import "./layout/_header";
 @import "./layout/_navbar";
 
 // components
 @import "./components/_buttons";
-@import "./components/_hero";
-@import "./components/_cards";
-@import "./components/_carousel";
-@import "./components/_forms";
-
 
 // pages
-@import "./pages/_builds";
+@import "./pages/_index";
 @import "./pages/_champions";
-@import "./pages/_home";
 @import "./pages/_regions";
-@import "./pages/_summoners";
-
-// responsive
-@import "./responsive/mobile";
-@import "./responsive/tablet";
-
-html,
-body {
-    overflow-x: clip;   /* o hidden si clip no está disponible */
-}
+@import "./pages/_comics";
+@import "./pages/_wallpapers";

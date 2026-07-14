@@ -1,0 +1,50 @@
+.show-wallpapers
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-card
+    {
+        padding: 1rem;
+        display: flex;
+        direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($color: #000000, $alpha: 0.75);
+    }
+    &-title {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        h1 {
+            font-family: $font-body;
+            text-align: center;
+            span {
+                display: block;
+            }
+
+            span:first-child {
+                font-size: 2rem;
+                color: $color-font-body;
+            }
+
+            span:last-child {
+                font-size: 2rem;
+                color: $color-font-title;
+            }
+        }
+        p{
+            text-align: justify;
+        }
+
+    }        
+}
+
+html,
+body {
+    overflow-x: clip;
+}
